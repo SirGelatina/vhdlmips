@@ -2,6 +2,16 @@ library ieee ;
 use ieee.std_logic_1164.all ;
 use work.datatypes.all;
 
+-- O processador de assembly MIPS aqui implementado tem como referência
+-- o processador multiciclo da terceira edição do livro Organização e
+-- Projeto de Computadores - A Interface Hardware/Software (Edição em
+-- português), de PATTERSON, D. e HENNESSY, J.
+-- 
+-- Referências úteis:
+-- pág. 243 - caminho de dados completo
+-- pág. 244 - ação dos sinais de controle
+-- pág. 256 - máquina de estados da unidade de controle
+
 entity Processor is
 	PORT (
 		clk, clr : IN STD_LOGIC
@@ -16,10 +26,10 @@ ARCHITECTURE LogicFunction OF Processor IS
 	
 	component Register32
 		port (
-			d : word;
+			d : in word;
 			enable : in std_logic;
 			clk, clr : in std_logic ;
-			q : word
+			q : out word
 		) ;
 	end component;
 	
@@ -62,6 +72,7 @@ ARCHITECTURE LogicFunction OF Processor IS
 	-- Convenção de nomeação de multiplexadores:
 	-- Multiplexadores mais à esquerda tem número menor
 	-- Para multiplexadores na mesma coluna, o de cima de número menor
+	-- Ver fig. 5.28 do livro
 	
 	-- Mux 0 (MUX0):
 	-- MUX0 tem um sinal de controle do tipo std_logic_vector de 1 bit,
@@ -187,7 +198,9 @@ ARCHITECTURE LogicFunction OF Processor IS
 	signal S2L0_out : word;
 	
 	-- Shift 2 Left 1 (s2L1)
-	------------------------------------------------------- FAZER OBSERVAÇÃO AQUI
+	-- Foi necessário um sinal de entrada porque o sinal que S2L1 recebe
+	-- um sinal de apenas 26 bits na entrada, mas a unidade funcional de
+	-- left shift foi projetada para trabalhar com 32 bits
 	
 	signal S2L1_in : word;
 	signal S2L1_out : word;
@@ -442,10 +455,15 @@ begin
 	
 	-- Shift 2 Left 1 (S2L1)
 	
+	S2L1_in(25 downto 0) <= IR_out(25 downto 0);
+	S2L1_in(31 downto 26) <= (others => '0');
+	
 	S2L1_out(31 downto 28) <= PC_out(31 downto 28);
 	
 	fu_shift2left1: Shift2Left port map (
 		input => S2L1_in,
+		
+		output(31 downto 28) => open,
 		output(27 downto 0) => S2L1_out(27 downto 0)
 	);
 	
@@ -481,34 +499,5 @@ begin
 		
 		data => MEM_data
 	);
-	
-	
---	a0 <= not a1;
---	f <= a0;
---	dbg <= a1;
---	test: RegisterNUnit
---		generic map(n => 32)
---		port map(a0, clk, clr, a1);
-----	f <= (x1 AND NOT x2) OR (NOT x1 AND x2);
---
---	i0 <= "0";
---	i1 <= "1";
---	
---	inarr(0) <= (others=>'1');
---	inarr(1) <= (others=>'0');
---	
---	c0 <= (0 => clk, others => '0');
---	
---	test2: NMux
---		generic map(
---			controlWidth => 1
---		)
---		port map(
---			muxin => inarr,
---			control => c0,
---			muxout(0 downto 0) => t
---		);
---		
---		
 			
 END LogicFunction ;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor
-Thu Nov 24 00:57:25 2016
+Thu Nov 24 01:56:11 2016
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Nov 24 00:57:25 2016           ;
+; Analysis & Synthesis Status        ; Failed - Thu Nov 24 01:56:11 2016           ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; Processor                                   ;
 ; Top-level Entity Name              ; Processor                                   ;
@@ -161,50 +161,43 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Nov 24 00:57:05 2016
+    Info: Processing started: Thu Nov 24 01:55:54 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProcessadorMIPS -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
 Info (12021): Found 2 design units, including 1 entities, in source file processor.vhd
-    Info (12022): Found design unit 1: Processor-LogicFunction File: C:/ProjetoLDH/Processor.vhd Line: 11
-    Info (12023): Found entity 1: Processor File: C:/ProjetoLDH/Processor.vhd Line: 5
+    Info (12022): Found design unit 1: Processor-LogicFunction File: C:/vhdlmips/Processor.vhd Line: 21
+    Info (12023): Found entity 1: Processor File: C:/vhdlmips/Processor.vhd Line: 15
 Info (12021): Found 2 design units, including 1 entities, in source file nmux.vhd
-    Info (12022): Found design unit 1: NMux-Primitive File: C:/ProjetoLDH/NMux.vhd Line: 18
-    Info (12023): Found entity 1: NMux File: C:/ProjetoLDH/NMux.vhd Line: 7
+    Info (12022): Found design unit 1: NMux-Primitive File: C:/vhdlmips/NMux.vhd Line: 18
+    Info (12023): Found entity 1: NMux File: C:/vhdlmips/NMux.vhd Line: 7
 Info (12021): Found 1 design units, including 0 entities, in source file pkg.vhd
-    Info (12022): Found design unit 1: datatypes File: C:/ProjetoLDH/pkg.vhd Line: 5
+    Info (12022): Found design unit 1: datatypes File: C:/vhdlmips/pkg.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file shift2left.vhd
-    Info (12022): Found design unit 1: Shift2Left-Primitive File: C:/ProjetoLDH/Shift2Left.vhd Line: 12
-    Info (12023): Found entity 1: Shift2Left File: C:/ProjetoLDH/Shift2Left.vhd Line: 5
+    Info (12022): Found design unit 1: Shift2Left-Primitive File: C:/vhdlmips/Shift2Left.vhd Line: 12
+    Info (12023): Found entity 1: Shift2Left File: C:/vhdlmips/Shift2Left.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file register32.vhd
-    Info (12022): Found design unit 1: Register32-DFF File: C:/ProjetoLDH/Register32.vhd Line: 14
-    Info (12023): Found entity 1: Register32 File: C:/ProjetoLDH/Register32.vhd Line: 5
+    Info (12022): Found design unit 1: Register32-DFF File: C:/vhdlmips/Register32.vhd Line: 14
+    Info (12023): Found entity 1: Register32 File: C:/vhdlmips/Register32.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file signalextension.vhd
-    Info (12022): Found design unit 1: SignalExtension-Primitive File: C:/ProjetoLDH/SignalExtension.vhd Line: 13
-    Info (12023): Found entity 1: SignalExtension File: C:/ProjetoLDH/SignalExtension.vhd Line: 6
+    Info (12022): Found design unit 1: SignalExtension-Primitive File: C:/vhdlmips/SignalExtension.vhd Line: 13
+    Info (12023): Found entity 1: SignalExtension File: C:/vhdlmips/SignalExtension.vhd Line: 6
 Info (12127): Elaborating entity "Processor" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Processor.vhd(28): used implicit default value for signal "IR_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/ProjetoLDH/Processor.vhd Line: 28
-Warning (10541): VHDL Signal Declaration warning at Processor.vhd(32): used implicit default value for signal "REGA_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/ProjetoLDH/Processor.vhd Line: 32
-Warning (10541): VHDL Signal Declaration warning at Processor.vhd(36): used implicit default value for signal "REGB_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/ProjetoLDH/Processor.vhd Line: 36
-Warning (10541): VHDL Signal Declaration warning at Processor.vhd(40): used implicit default value for signal "MDR_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/ProjetoLDH/Processor.vhd Line: 40
-Warning (10541): VHDL Signal Declaration warning at Processor.vhd(44): used implicit default value for signal "ALUO_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/ProjetoLDH/Processor.vhd Line: 44
-Warning (10541): VHDL Signal Declaration warning at Processor.vhd(49): used implicit default value for signal "PC_out" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/ProjetoLDH/Processor.vhd Line: 49
-Warning (10541): VHDL Signal Declaration warning at Processor.vhd(192): used implicit default value for signal "S2L1_in" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/ProjetoLDH/Processor.vhd Line: 192
-Critical Warning (10920): VHDL Incomplete Partial Association warning at Processor.vhd(447): port or argument "output" has 4/32 unassociated elements File: C:/ProjetoLDH/Processor.vhd Line: 447
-Info (12128): Elaborating entity "Register32" for hierarchy "Register32:fu_instructionregister" File: C:/ProjetoLDH/Processor.vhd Line: 262
-Info (12128): Elaborating entity "NMux" for hierarchy "NMux:fu_mux0" File: C:/ProjetoLDH/Processor.vhd Line: 334
-Info (12128): Elaborating entity "NMux" for hierarchy "NMux:fu_mux4" File: C:/ProjetoLDH/Processor.vhd Line: 390
-Info (12128): Elaborating entity "SignalExtension" for hierarchy "SignalExtension:fu_signalextension" File: C:/ProjetoLDH/Processor.vhd Line: 429
-Info (12128): Elaborating entity "Shift2Left" for hierarchy "Shift2Left:fu_shift2left0" File: C:/ProjetoLDH/Processor.vhd Line: 437
-Error (12006): Node instance "fu_controlunit" instantiates undefined entity "ControlUnit". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/ProjetoLDH/Processor.vhd Line: 241
-Error (12006): Node instance "fu_registerbank" instantiates undefined entity "RegisterBank". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/ProjetoLDH/Processor.vhd Line: 414
-Error (12006): Node instance "fu_alu" instantiates undefined entity "ALU". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/ProjetoLDH/Processor.vhd Line: 454
-Error (12006): Node instance "fu_alucontrol" instantiates undefined entity "ALUControl". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/ProjetoLDH/Processor.vhd Line: 466
-Error (12006): Node instance "fu_memory" instantiates undefined entity "Memory". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/ProjetoLDH/Processor.vhd Line: 475
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 9 warnings
+Critical Warning (10920): VHDL Incomplete Partial Association warning at Processor.vhd(461): port or argument "output" has 4/32 unassociated elements File: C:/vhdlmips/Processor.vhd Line: 461
+Info (12128): Elaborating entity "Register32" for hierarchy "Register32:fu_instructionregister" File: C:/vhdlmips/Processor.vhd Line: 273
+Info (12128): Elaborating entity "NMux" for hierarchy "NMux:fu_mux0" File: C:/vhdlmips/Processor.vhd Line: 345
+Info (12128): Elaborating entity "NMux" for hierarchy "NMux:fu_mux4" File: C:/vhdlmips/Processor.vhd Line: 401
+Info (12128): Elaborating entity "SignalExtension" for hierarchy "SignalExtension:fu_signalextension" File: C:/vhdlmips/Processor.vhd Line: 440
+Info (12128): Elaborating entity "Shift2Left" for hierarchy "Shift2Left:fu_shift2left0" File: C:/vhdlmips/Processor.vhd Line: 448
+Error (12006): Node instance "fu_controlunit" instantiates undefined entity "ControlUnit". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/vhdlmips/Processor.vhd Line: 252
+Error (12006): Node instance "fu_registerbank" instantiates undefined entity "RegisterBank". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/vhdlmips/Processor.vhd Line: 425
+Error (12006): Node instance "fu_alu" instantiates undefined entity "ALU". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/vhdlmips/Processor.vhd Line: 470
+Error (12006): Node instance "fu_alucontrol" instantiates undefined entity "ALUControl". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/vhdlmips/Processor.vhd Line: 482
+Error (12006): Node instance "fu_memory" instantiates undefined entity "Memory". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/vhdlmips/Processor.vhd Line: 491
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 2 warnings
     Error: Peak virtual memory: 663 megabytes
-    Error: Processing ended: Thu Nov 24 00:57:25 2016
-    Error: Elapsed time: 00:00:20
+    Error: Processing ended: Thu Nov 24 01:56:11 2016
+    Error: Elapsed time: 00:00:17
     Error: Total CPU time (on all processors): 00:00:39
 
 
