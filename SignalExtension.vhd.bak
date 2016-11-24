@@ -1,0 +1,12 @@
+entity SignalExtension is
+	port (
+		sgnin 	: in std_logic_vector(15 downto 0);
+		sgnout 	: out word
+	);
+end SignalExtension;
+
+architecture Primitive of SignalExtension is
+begin
+	sgnout(15 downto 0) 	<= sgnin;
+	sgnout(31 downto 16) <= (others => '0');
+end Primitive;

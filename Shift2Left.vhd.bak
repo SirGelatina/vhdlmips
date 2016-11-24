@@ -1,0 +1,15 @@
+library ieee ;
+use ieee.std_logic_1164.all ;
+use work.datatypes.all;
+
+entity Shift2Left is
+	port (
+		input 	: in word;
+		outout 	: out word
+	);
+end Shift2Left;
+
+architecture Primitive of Shift2Left is
+begin
+	
+end Primitive;
