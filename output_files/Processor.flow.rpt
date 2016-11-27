@@ -1,5 +1,5 @@
 Flow report for Processor
-Thu Nov 24 01:56:11 2016
+Sun Nov 27 20:19:52 2016
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu Nov 24 01:56:11 2016      ;
+; Flow Status                        ; Flow Failed - Sun Nov 27 20:19:52 2016      ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; Processor                                   ;
 ; Top-level Entity Name              ; Processor                                   ;
@@ -63,7 +63,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2016 01:55:55 ;
+; Start date & time ; 11/27/2016 20:19:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
@@ -74,10 +74,14 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 31032335586570.147995975508888         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 31032335586570.148028517806140         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MISC_FILE                           ; Memory.bsf                             ; --            ; --          ; --             ;
+; MISC_FILE                           ; Memory_inst.v                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; Memory_bb.v                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; Memory.cmp                             ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
@@ -90,8 +94,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 663 MB              ; 00:00:39                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:39                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 676 MB              ; 00:00:35                           ;
+; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

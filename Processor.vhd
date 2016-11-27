@@ -13,12 +13,12 @@ use work.datatypes.all;
 -- pág. 256 - máquina de estados da unidade de controle
 
 entity Processor is
-	PORT (
-		clk, clr : IN STD_LOGIC
+	port (
+		clk, clr : in std_logic
 	) ;
-END Processor ;
+end Processor ;
 
-ARCHITECTURE LogicFunction OF Processor IS
+architecture LogicFunction of Processor is
 
 	signal always1 : std_logic;
 
@@ -125,6 +125,8 @@ ARCHITECTURE LogicFunction OF Processor IS
 			writedata 						: in word;
 			read1out, read2out 			: out word;
 			
+			clk								: in std_logic;
+			
 			writereg							: in std_logic
 		);
 	end component;
@@ -137,6 +139,7 @@ ARCHITECTURE LogicFunction OF Processor IS
 	component ControlUnit is
 		port (
 			Op 				: in std_logic_vector(5 downto 0);
+			clk				: in std_logic;
 		
 			WritePCCond 	: out std_logic;
 			WritePC		 	: out std_logic;
@@ -231,20 +234,37 @@ ARCHITECTURE LogicFunction OF Processor IS
 	
 	signal ALUC_control : std_logic_vector(2 downto 0);
 	
-	component Memory is
-		port (
-			readmem		: in std_logic;
-			writemem 	: in std_logic;
+	component Memory
+		PORT
+		(
+			address	: in std_logic_vector (9 downto 0);
+			clken		: in std_logic  := '1';
+			clock		: in std_logic  := '1';
+			data		: in std_logic_vector (31 downto 0);
 			
-			addr			: in word;
-			writedata	: in word;
-			data			: out word
+			rden		: in std_logic;
+			wren		: in std_logic;
+			
+			q		: out std_logic_vector (31 downto 0)
 		);
 	end component;
+	
+--	component Memory is
+--		port (
+--			readmem		: in std_logic;
+--			writemem 	: in std_logic;
+--			
+--			addr			: in word;
+--			writedata	: in word;
+--			data			: out word
+--		);
+--	end component;
 	
 	-- Memory (MEM)
 	
 	signal MEM_data : word;
+	signal MEM_writeenable : std_logic;
+	signal MEM_readenable : std_logic;
 	
 begin
 	always1 <= '1';
@@ -253,6 +273,8 @@ begin
 
 	fu_controlunit: ControlUnit port map(
 		Op => IR_out(5 downto 0),
+		
+		clk => clk,
 		
 		WritePCCond => CU_WritePCCond,
 		WritePC => CU_WritePC,
@@ -434,6 +456,8 @@ begin
 		read1out => RB_read1out,
 		read2out => RB_read2out,
 		
+		clk => clk,
+		
 		writereg => CU_WriteReg
 	);
 		
@@ -490,14 +514,30 @@ begin
 	
 	-- Memory (MEM)
 	
-	fu_memory: Memory port map (
-		addr => MUX0_out,
-		writedata => REGB_out,
+	MEM_readenable <= CU_ReadMem;
+	MEM_writeenable <= CU_WriteMem and (not CU_ReadMem);
+	
+	fu_memory : Memory port map (
+		address => MUX0_out(9 downto 0),
+		clken => always1,
+		clock => clk,
 		
-		readmem => CU_ReadMem,
-		writemem => CU_WriteMem,
+		data => REGB_out,
 		
-		data => MEM_data
+		rden => MEM_readenable,
+		wren => MEM_writeenable,
+		
+		q => MEM_data
 	);
+	
+--	fu_memory: Memory port map (
+--		addr => MUX0_out,
+--		writedata => REGB_out,
+--		
+--		readmem => CU_ReadMem,
+--		writemem => CU_WriteMem,
+--		
+--		data => MEM_data
+--	);
 			
 END LogicFunction ;

@@ -20,11 +20,13 @@ begin
 			internalbuffer <= (others => '0');
 			q <= (others => '0');
 		elsif clk'EVENT and clk = '1' then
-			if enable = '1' then
-				internalbuffer <= d;
-			end if;
-		elsif clk'EVENT and clk = '0' then
-			q <= internalbuffer;
+			q <= d;
+--		elsif clk'EVENT and clk = '1' then
+--			if enable = '1' then
+--				internalbuffer <= d;
+--			end if;
+--		elsif clk'EVENT and clk = '0' then
+--			q <= internalbuffer;
 		end if;
 	end process;
 end DFF ;
