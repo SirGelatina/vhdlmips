@@ -33,10 +33,12 @@ begin
 					when "101010" =>
 						control <= "111"; -- set on less than
 					when others =>
-						-- vish
+						-- Comportamento indefinido
+						control <= "000";
 				end case;
 			when others =>
-				-- vish
+				-- Comportamento indefinido
+				control <= "000";
 		end case;
 	end process;
 end Primitive;

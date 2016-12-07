@@ -36,7 +36,8 @@ begin
 					result <= (word'high downto 1 => '0') & '0';
 				end if;
 			when others =>
-				-- vish
+				-- Comportamento indefinido
+				result <= op1 AND op2;
 		end case;
 	end process;
 end Primitive;

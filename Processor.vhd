@@ -2,19 +2,47 @@ library ieee ;
 use ieee.std_logic_1164.all ;
 use work.datatypes.all;
 
+-- =======================================================
+-- =																		=
+-- = 	USP / Escola de Engenharia de São Carlos - 2016		=
+-- =																		=
+-- =  SEL0632 - Linguagens de Descrição de Hardware		=
+-- = 		Prof. Maximiliam Luppe									=
+-- =																		=
+-- =======================================================
+-- =																		=
+-- =  Grupo:															=
+-- =		Denilson A. Marques Junior		8504201				=
+-- = 		Guilherme Andriotti Momesso	8910441				=
+--	=		Rafael Shibana Fayan				8910285				=
+--	=																		=
+--	=======================================================
+
 -- O processador de assembly MIPS aqui implementado tem como referência
 -- o processador multiciclo da terceira edição do livro Organização e
 -- Projeto de Computadores - A Interface Hardware/Software (Edição em
 -- português), de PATTERSON, D. e HENNESSY, J.
 -- 
 -- Referências úteis:
+-- pág. 228 - tabela verdade do controle da ALU
 -- pág. 243 - caminho de dados completo
 -- pág. 244 - ação dos sinais de controle
 -- pág. 256 - máquina de estados da unidade de controle
 
 entity Processor is
 	port (
-		clk, clr : in std_logic
+		clk, clr : in std_logic;
+		
+		-- As saídas debugX existem apenas para propósitos de 
+		-- debug, e contém o valor de $t0, $t1, $t2 e $t3,
+		-- respectivamente.
+		debug1, debug2, debug3, debug4 : out word;
+		
+		-- debug5 e 6 podem ser usados de qualquer outra maneira
+		debug5, debug6 : out word;
+		
+		-- Para verificar o estado
+		debugstate : out integer
 	) ;
 end Processor ;
 
@@ -127,7 +155,12 @@ architecture LogicFunction of Processor is
 			
 			clk								: in std_logic;
 			
-			writereg							: in std_logic
+			writereg							: in std_logic;
+			
+			-- Para propósito de debug acrescentamos essas saídas ao
+			-- registrador que recebem $t0, $t1, $t2 e $t3 respectivamente.
+			debug1out, debug2out 		: out word;
+			debug3out, debug4out 		: out word
 		);
 	end component;
 	
@@ -154,7 +187,9 @@ architecture LogicFunction of Processor is
 			OrigBALU 		: out std_logic_vector(1 downto 0);
 			OrigAALU			: out std_logic;
 			WriteReg 		: out std_logic;
-			RegDst 			: out std_logic
+			RegDst 			: out std_logic;
+		
+			state				: out integer
 		);
 	end component;
 	
@@ -249,17 +284,6 @@ architecture LogicFunction of Processor is
 		);
 	end component;
 	
---	component Memory is
---		port (
---			readmem		: in std_logic;
---			writemem 	: in std_logic;
---			
---			addr			: in word;
---			writedata	: in word;
---			data			: out word
---		);
---	end component;
-	
 	-- Memory (MEM)
 	
 	signal MEM_data : word;
@@ -289,7 +313,9 @@ begin
 		OrigBALU => CU_OrigBALU,
 		OrigAALU => CU_OrigAALU,
 		WriteReg => CU_WriteReg,
-		RegDst => CU_RegDst
+		RegDst => CU_RegDst,
+		
+		state => debugstate
 	);
 	
 	-- Instruction Register (IR)
@@ -458,7 +484,12 @@ begin
 		
 		clk => clk,
 		
-		writereg => CU_WriteReg
+		writereg => CU_WriteReg,
+		
+		debug1out => debug1,
+		debug2out => debug2,
+		debug3out => debug3,
+		debug4out => debug4
 	);
 		
 	-- Signal Extension (SE)
@@ -530,14 +561,22 @@ begin
 		q => MEM_data
 	);
 	
---	fu_memory: Memory port map (
---		addr => MUX0_out,
---		writedata => REGB_out,
---		
---		readmem => CU_ReadMem,
---		writemem => CU_WriteMem,
---		
---		data => MEM_data
---	);
-			
+	debug5 <= MEM_data;
+	
+	debug6(0) <= CU_WritePCCond;
+	debug6(1) <= CU_WritePC;
+	debug6(2) <= CU_IorD;
+	debug6(3) <= CU_ReadMem;
+	debug6(4) <= CU_WriteMem;
+	debug6(5) <= CU_MemtoReg;
+	debug6(6) <= CU_WriteIR;
+	
+	debug6(8 downto 7) <= CU_OrigPC;
+	debug6(10 downto 9) <= CU_OpALU;
+	debug6(12 downto 11) <= CU_OrigBALU;
+	debug6(13) <= CU_OrigAALU;
+	debug6(14) <= CU_WriteReg;
+	debug6(15) <= CU_RegDst;
+
+	
 END LogicFunction ;

@@ -21,13 +21,17 @@ entity ControlUnit is
 		OrigBALU 		: out std_logic_vector(1 downto 0);
 		OrigAALU			: out std_logic;
 		WriteReg 		: out std_logic;
-		RegDst 			: out std_logic
+		RegDst 			: out std_logic;
+		
+		state				: out integer
 	);
 end ControlUnit;
 
 architecture Primitive of ControlUnit is
 	signal CurrentState : integer := STATE_instructionfetch;
 begin
+	state <= CurrentState;
+	
 	statemachine: process (clk, CurrentState, Op)
 	begin
 		if clk'EVENT and clk = '1' then

@@ -26,7 +26,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Tue Nov 22 23:54:02 2016
+    Info: Processing started: Wed Dec 07 18:15:06 2016
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProcessadorMIPS -c Processor --vector_source=C:/ProjetoLDH/Processor.vwf --testbench_file=C:/ProjetoLDH/simulation/qsim/Processor.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Intel and sold by Intel or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Tue Nov 22 23:54:03 2016
+    Info: Processing started: Wed Dec 07 18:15:08 2016
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ProjetoLDH/simulation/qsim/ ProcessadorMIPS -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file Processor.vho in folder "C:/ProjetoLDH/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 518 megabytes
-    Info: Processing ended: Tue Nov 22 23:54:04 2016
+    Info: Peak virtual memory: 527 megabytes
+    Info: Processing ended: Wed Dec 07 18:15:09 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -67,7 +67,7 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/ProjetoLDH/simulation/qsim/ProcessadorMIPS.do generated.
+C:/vhdlmips/simulation/qsim/ProcessadorMIPS.do generated.
 
 Completed successfully. 
 
@@ -83,7 +83,7 @@ Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
 # do ProcessadorMIPS.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:54:05 on Nov 22,2016
+# Start time: 18:15:09 on Dec 07,2016
 # vcom -work work Processor.vho 
 
 # -- Loading package STANDARD
@@ -99,22 +99,22 @@ Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Loading package altera_primitives_components
 # -- Compiling entity Processor
 # -- Compiling architecture structure of Processor
-# End time: 23:54:05 on Nov 22,2016, Elapsed time: 0:00:00
+# End time: 18:15:10 on Dec 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:54:05 on Nov 22,2016
+# Start time: 18:15:10 on Dec 07,2016
 # vcom -work work Processor.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Processor_vhd_vec_tst
 # -- Compiling architecture Processor_arch of Processor_vhd_vec_tst
-# End time: 23:54:05 on Nov 22,2016, Elapsed time: 0:00:00
+# End time: 18:15:10 on Dec 07,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Processor_vhd_vec_tst 
-# Start time: 23:54:05 on Nov 22,2016
+# Start time: 18:15:10 on Dec 07,2016
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -134,22 +134,279 @@ Reading C:/intelFPGA/16.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive.cycloneive_ena_reg(behave)
 # Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
+
 # after#35
 
-# End time: 23:54:05 on Nov 22,2016, Elapsed time: 0:00:00
+# End time: 18:15:10 on Dec 07,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/ProjetoLDH/Processor.vwf...
+Reading C:/vhdlmips/Processor.vwf...
 
-Reading C:/ProjetoLDH/simulation/qsim/ProcessadorMIPS.msim.vcd...
+Reading C:/vhdlmips/simulation/qsim/ProcessadorMIPS.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/ProjetoLDH/simulation/qsim/ProcessadorMIPS_20161122235406.sim.vwf
+Warning: debug1[31] - signal not found in VCD.
+
+Warning: debug1[30] - signal not found in VCD.
+
+Warning: debug1[29] - signal not found in VCD.
+
+Warning: debug1[28] - signal not found in VCD.
+
+Warning: debug1[27] - signal not found in VCD.
+
+Warning: debug1[26] - signal not found in VCD.
+
+Warning: debug1[25] - signal not found in VCD.
+
+Warning: debug1[24] - signal not found in VCD.
+
+Warning: debug1[23] - signal not found in VCD.
+
+Warning: debug1[22] - signal not found in VCD.
+
+Warning: debug1[21] - signal not found in VCD.
+
+Warning: debug1[20] - signal not found in VCD.
+
+Warning: debug1[19] - signal not found in VCD.
+
+Warning: debug1[18] - signal not found in VCD.
+
+Warning: debug1[17] - signal not found in VCD.
+
+Warning: debug1[16] - signal not found in VCD.
+
+Warning: debug1[15] - signal not found in VCD.
+
+Warning: debug1[14] - signal not found in VCD.
+
+Warning: debug1[13] - signal not found in VCD.
+
+Warning: debug1[12] - signal not found in VCD.
+
+Warning: debug1[11] - signal not found in VCD.
+
+Warning: debug1[10] - signal not found in VCD.
+
+Warning: debug1[9] - signal not found in VCD.
+
+Warning: debug1[8] - signal not found in VCD.
+
+Warning: debug1[7] - signal not found in VCD.
+
+Warning: debug1[6] - signal not found in VCD.
+
+Warning: debug1[5] - signal not found in VCD.
+
+Warning: debug1[4] - signal not found in VCD.
+
+Warning: debug1[3] - signal not found in VCD.
+
+Warning: debug1[2] - signal not found in VCD.
+
+Warning: debug1[1] - signal not found in VCD.
+
+Warning: debug1[0] - signal not found in VCD.
+
+Warning: debug2[31] - signal not found in VCD.
+
+Warning: debug2[30] - signal not found in VCD.
+
+Warning: debug2[29] - signal not found in VCD.
+
+Warning: debug2[28] - signal not found in VCD.
+
+Warning: debug2[27] - signal not found in VCD.
+
+Warning: debug2[26] - signal not found in VCD.
+
+Warning: debug2[25] - signal not found in VCD.
+
+Warning: debug2[24] - signal not found in VCD.
+
+Warning: debug2[23] - signal not found in VCD.
+
+Warning: debug2[22] - signal not found in VCD.
+
+Warning: debug2[21] - signal not found in VCD.
+
+Warning: debug2[20] - signal not found in VCD.
+
+Warning: debug2[19] - signal not found in VCD.
+
+Warning: debug2[18] - signal not found in VCD.
+
+Warning: debug2[17] - signal not found in VCD.
+
+Warning: debug2[16] - signal not found in VCD.
+
+Warning: debug2[15] - signal not found in VCD.
+
+Warning: debug2[14] - signal not found in VCD.
+
+Warning: debug2[13] - signal not found in VCD.
+
+Warning: debug2[12] - signal not found in VCD.
+
+Warning: debug2[11] - signal not found in VCD.
+
+Warning: debug2[10] - signal not found in VCD.
+
+Warning: debug2[9] - signal not found in VCD.
+
+Warning: debug2[8] - signal not found in VCD.
+
+Warning: debug2[7] - signal not found in VCD.
+
+Warning: debug2[6] - signal not found in VCD.
+
+Warning: debug2[5] - signal not found in VCD.
+
+Warning: debug2[4] - signal not found in VCD.
+
+Warning: debug2[3] - signal not found in VCD.
+
+Warning: debug2[2] - signal not found in VCD.
+
+Warning: debug2[1] - signal not found in VCD.
+
+Warning: debug2[0] - signal not found in VCD.
+
+Warning: debug5[31] - signal not found in VCD.
+
+Warning: debug5[30] - signal not found in VCD.
+
+Warning: debug5[29] - signal not found in VCD.
+
+Warning: debug5[28] - signal not found in VCD.
+
+Warning: debug5[27] - signal not found in VCD.
+
+Warning: debug5[26] - signal not found in VCD.
+
+Warning: debug5[25] - signal not found in VCD.
+
+Warning: debug5[24] - signal not found in VCD.
+
+Warning: debug5[23] - signal not found in VCD.
+
+Warning: debug5[22] - signal not found in VCD.
+
+Warning: debug5[21] - signal not found in VCD.
+
+Warning: debug5[20] - signal not found in VCD.
+
+Warning: debug5[19] - signal not found in VCD.
+
+Warning: debug5[18] - signal not found in VCD.
+
+Warning: debug5[17] - signal not found in VCD.
+
+Warning: debug5[16] - signal not found in VCD.
+
+Warning: debug5[15] - signal not found in VCD.
+
+Warning: debug5[14] - signal not found in VCD.
+
+Warning: debug5[13] - signal not found in VCD.
+
+Warning: debug5[12] - signal not found in VCD.
+
+Warning: debug5[11] - signal not found in VCD.
+
+Warning: debug5[10] - signal not found in VCD.
+
+Warning: debug5[9] - signal not found in VCD.
+
+Warning: debug5[8] - signal not found in VCD.
+
+Warning: debug5[7] - signal not found in VCD.
+
+Warning: debug5[6] - signal not found in VCD.
+
+Warning: debug5[5] - signal not found in VCD.
+
+Warning: debug5[4] - signal not found in VCD.
+
+Warning: debug5[3] - signal not found in VCD.
+
+Warning: debug5[2] - signal not found in VCD.
+
+Warning: debug5[1] - signal not found in VCD.
+
+Warning: debug5[0] - signal not found in VCD.
+
+Warning: debugstate[31] - signal not found in VCD.
+
+Warning: debugstate[30] - signal not found in VCD.
+
+Warning: debugstate[29] - signal not found in VCD.
+
+Warning: debugstate[28] - signal not found in VCD.
+
+Warning: debugstate[27] - signal not found in VCD.
+
+Warning: debugstate[26] - signal not found in VCD.
+
+Warning: debugstate[25] - signal not found in VCD.
+
+Warning: debugstate[24] - signal not found in VCD.
+
+Warning: debugstate[23] - signal not found in VCD.
+
+Warning: debugstate[22] - signal not found in VCD.
+
+Warning: debugstate[21] - signal not found in VCD.
+
+Warning: debugstate[20] - signal not found in VCD.
+
+Warning: debugstate[19] - signal not found in VCD.
+
+Warning: debugstate[18] - signal not found in VCD.
+
+Warning: debugstate[17] - signal not found in VCD.
+
+Warning: debugstate[16] - signal not found in VCD.
+
+Warning: debugstate[15] - signal not found in VCD.
+
+Warning: debugstate[14] - signal not found in VCD.
+
+Warning: debugstate[13] - signal not found in VCD.
+
+Warning: debugstate[12] - signal not found in VCD.
+
+Warning: debugstate[11] - signal not found in VCD.
+
+Warning: debugstate[10] - signal not found in VCD.
+
+Warning: debugstate[9] - signal not found in VCD.
+
+Warning: debugstate[8] - signal not found in VCD.
+
+Warning: debugstate[7] - signal not found in VCD.
+
+Warning: debugstate[6] - signal not found in VCD.
+
+Warning: debugstate[5] - signal not found in VCD.
+
+Warning: debugstate[4] - signal not found in VCD.
+
+Warning: debugstate[3] - signal not found in VCD.
+
+Warning: debugstate[2] - signal not found in VCD.
+
+Warning: debugstate[1] - signal not found in VCD.
+
+Warning: debugstate[0] - signal not found in VCD.
+
+Writing the resulting VWF to C:/vhdlmips/simulation/qsim/ProcessadorMIPS_20161207181510.sim.vwf
 
 Finished VCD to VWF conversion.
 

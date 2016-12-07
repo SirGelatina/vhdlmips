@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Processor
-Wed Nov 23 01:23:16 2016
+Wed Dec 07 18:15:09 2016
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Nov 23 01:23:16 2016 ;
+; EDA Netlist Writer Status ; Successful - Wed Dec 07 18:15:08 2016 ;
 ; Revision Name             ; Processor                             ;
 ; Top-level Entity Name     ; Processor                             ;
 ; Family                    ; Cyclone IV E                          ;
@@ -51,8 +51,7 @@ agreement for further details.
 ; Option                                                                                            ; Setting                ;
 +---------------------------------------------------------------------------------------------------+------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate functional simulation netlist                                                            ; Off                    ;
-; Time scale                                                                                        ; 1 ps                   ;
+; Generate functional simulation netlist                                                            ; On                     ;
 ; Truncate long hierarchy paths                                                                     ; Off                    ;
 ; Map illegal HDL characters                                                                        ; Off                    ;
 ; Flatten buses into individual nodes                                                               ; Off                    ;
@@ -67,20 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+------------------------------------------------------------------------+
-; Simulation Generated Files                                             ;
-+------------------------------------------------------------------------+
-; Generated Files                                                        ;
-+------------------------------------------------------------------------+
-; C:/ProjetoLDH/simulation/modelsim/Processor_6_1200mv_85c_slow.vho      ;
-; C:/ProjetoLDH/simulation/modelsim/Processor_6_1200mv_0c_slow.vho       ;
-; C:/ProjetoLDH/simulation/modelsim/Processor_min_1200mv_0c_fast.vho     ;
-; C:/ProjetoLDH/simulation/modelsim/Processor.vho                        ;
-; C:/ProjetoLDH/simulation/modelsim/Processor_6_1200mv_85c_vhd_slow.sdo  ;
-; C:/ProjetoLDH/simulation/modelsim/Processor_6_1200mv_0c_vhd_slow.sdo   ;
-; C:/ProjetoLDH/simulation/modelsim/Processor_min_1200mv_0c_vhd_fast.sdo ;
-; C:/ProjetoLDH/simulation/modelsim/Processor_vhd.sdo                    ;
-+------------------------------------------------------------------------+
++----------------------------------------------+
+; Simulation Generated Files                   ;
++----------------------------------------------+
+; Generated Files                              ;
++----------------------------------------------+
+; C:/ProjetoLDH/simulation/qsim//Processor.vho ;
++----------------------------------------------+
 
 
 +-----------------------------+
@@ -89,20 +81,27 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Wed Nov 23 01:23:15 2016
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ProcessadorMIPS -c Processor
+    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Wed Dec 07 18:15:08 2016
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/ProjetoLDH/simulation/qsim/ ProcessadorMIPS -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file Processor_6_1200mv_85c_slow.vho in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Processor_6_1200mv_0c_slow.vho in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Processor_min_1200mv_0c_fast.vho in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Processor.vho in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Processor_6_1200mv_85c_vhd_slow.sdo in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Processor_6_1200mv_0c_vhd_slow.sdo in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Processor_min_1200mv_0c_vhd_fast.sdo in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Processor_vhd.sdo in folder "C:/ProjetoLDH/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Processor.vho in folder "C:/ProjetoLDH/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 528 megabytes
-    Info: Processing ended: Wed Nov 23 01:23:16 2016
+    Info: Peak virtual memory: 527 megabytes
+    Info: Processing ended: Wed Dec 07 18:15:09 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

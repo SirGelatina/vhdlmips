@@ -4,263 +4,723 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "f[31]",
+					"name" : "debug1[0]",
 					"strict" : false
 				},
 				{
-					"name" : "f[30]",
+					"name" : "debug1[1]",
 					"strict" : false
 				},
 				{
-					"name" : "f[29]",
+					"name" : "debug1[2]",
 					"strict" : false
 				},
 				{
-					"name" : "f[28]",
+					"name" : "debug1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "f[27]",
+					"name" : "debug1[4]",
 					"strict" : false
 				},
 				{
-					"name" : "f[26]",
+					"name" : "debug1[5]",
 					"strict" : false
 				},
 				{
-					"name" : "f[25]",
+					"name" : "debug1[6]",
 					"strict" : false
 				},
 				{
-					"name" : "f[24]",
+					"name" : "debug1[7]",
 					"strict" : false
 				},
 				{
-					"name" : "f[23]",
+					"name" : "debug1[8]",
 					"strict" : false
 				},
 				{
-					"name" : "f[22]",
+					"name" : "debug1[9]",
 					"strict" : false
 				},
 				{
-					"name" : "f[21]",
+					"name" : "debug1[10]",
 					"strict" : false
 				},
 				{
-					"name" : "f[20]",
+					"name" : "debug1[11]",
 					"strict" : false
 				},
 				{
-					"name" : "f[19]",
+					"name" : "debug1[12]",
 					"strict" : false
 				},
 				{
-					"name" : "f[18]",
+					"name" : "debug1[13]",
 					"strict" : false
 				},
 				{
-					"name" : "f[17]",
+					"name" : "debug1[14]",
 					"strict" : false
 				},
 				{
-					"name" : "f[16]",
+					"name" : "debug1[15]",
 					"strict" : false
 				},
 				{
-					"name" : "f[15]",
+					"name" : "debug1[16]",
 					"strict" : false
 				},
 				{
-					"name" : "f[14]",
+					"name" : "debug1[17]",
 					"strict" : false
 				},
 				{
-					"name" : "f[13]",
+					"name" : "debug1[18]",
 					"strict" : false
 				},
 				{
-					"name" : "f[12]",
+					"name" : "debug1[19]",
 					"strict" : false
 				},
 				{
-					"name" : "f[11]",
+					"name" : "debug1[20]",
 					"strict" : false
 				},
 				{
-					"name" : "f[10]",
+					"name" : "debug1[21]",
 					"strict" : false
 				},
 				{
-					"name" : "f[9]",
+					"name" : "debug1[22]",
 					"strict" : false
 				},
 				{
-					"name" : "f[8]",
+					"name" : "debug1[23]",
 					"strict" : false
 				},
 				{
-					"name" : "f[7]",
+					"name" : "debug1[24]",
 					"strict" : false
 				},
 				{
-					"name" : "f[6]",
+					"name" : "debug1[25]",
 					"strict" : false
 				},
 				{
-					"name" : "f[5]",
+					"name" : "debug1[26]",
 					"strict" : false
 				},
 				{
-					"name" : "f[4]",
+					"name" : "debug1[27]",
 					"strict" : false
 				},
 				{
-					"name" : "f[3]",
+					"name" : "debug1[28]",
 					"strict" : false
 				},
 				{
-					"name" : "f[2]",
+					"name" : "debug1[29]",
 					"strict" : false
 				},
 				{
-					"name" : "f[1]",
+					"name" : "debug1[30]",
 					"strict" : false
 				},
 				{
-					"name" : "f[0]",
+					"name" : "debug1[31]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[31]",
+					"name" : "debug2[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[30]",
+					"name" : "debug2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[29]",
+					"name" : "debug2[2]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[28]",
+					"name" : "debug2[3]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[27]",
+					"name" : "debug2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[26]",
+					"name" : "debug2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[25]",
+					"name" : "debug2[6]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[24]",
+					"name" : "debug2[7]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[23]",
+					"name" : "debug2[8]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[22]",
+					"name" : "debug2[9]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[21]",
+					"name" : "debug2[10]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[20]",
+					"name" : "debug2[11]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[19]",
+					"name" : "debug2[12]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[18]",
+					"name" : "debug2[13]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[17]",
+					"name" : "debug2[14]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[16]",
+					"name" : "debug2[15]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[15]",
+					"name" : "debug2[16]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[14]",
+					"name" : "debug2[17]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[13]",
+					"name" : "debug2[18]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[12]",
+					"name" : "debug2[19]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[11]",
+					"name" : "debug2[20]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[10]",
+					"name" : "debug2[21]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[9]",
+					"name" : "debug2[22]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[8]",
+					"name" : "debug2[23]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[7]",
+					"name" : "debug2[24]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[6]",
+					"name" : "debug2[25]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[5]",
+					"name" : "debug2[26]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[4]",
+					"name" : "debug2[27]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[3]",
+					"name" : "debug2[28]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[2]",
+					"name" : "debug2[29]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[1]",
+					"name" : "debug2[30]",
 					"strict" : false
 				},
 				{
-					"name" : "dbg[0]",
+					"name" : "debug2[31]",
 					"strict" : false
 				},
 				{
-					"name" : "t[0]",
+					"name" : "debug3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[7]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[8]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[9]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[10]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[11]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[12]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[13]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[14]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[15]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[16]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[17]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[18]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[19]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[20]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[21]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[22]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[23]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[24]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[25]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[26]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[27]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[28]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[29]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[30]",
+					"strict" : false
+				},
+				{
+					"name" : "debug3[31]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[7]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[8]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[9]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[10]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[11]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[12]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[13]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[14]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[15]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[16]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[17]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[18]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[19]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[20]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[21]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[22]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[23]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[24]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[25]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[26]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[27]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[28]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[29]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[30]",
+					"strict" : false
+				},
+				{
+					"name" : "debug4[31]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[7]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[8]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[9]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[10]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[11]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[12]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[13]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[14]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[15]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[16]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[17]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[18]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[19]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[20]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[21]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[22]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[23]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[24]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[25]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[26]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[27]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[28]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[29]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[30]",
+					"strict" : false
+				},
+				{
+					"name" : "debug5[31]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[3]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[6]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[7]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[8]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[9]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[10]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[11]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[12]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[13]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[14]",
+					"strict" : false
+				},
+				{
+					"name" : "debug6[15]",
+					"strict" : false
+				},
+				{
+					"name" : "debugstate[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debugstate[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debugstate[2]",
+					"strict" : false
+				},
+				{
+					"name" : "debugstate[3]",
 					"strict" : false
 				},
 				{
